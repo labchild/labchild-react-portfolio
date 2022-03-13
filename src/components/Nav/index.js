@@ -8,7 +8,7 @@ const Nav = (props) => {
     return (
         <header className="d-flex flex-row justify-content-between">
             <h2 className="lead font-weight-bold">
-                <a href="/" className="text-secondary nav-link">
+                <a href="/" className="text-secondary nav-link" onClick={() => { handleSectionSelect('About') }}>
                     Lelah Bates Childs
                 </a>
             </h2>
