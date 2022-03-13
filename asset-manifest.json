@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/labchild-react-portfolio/static/css/main.7a72570f.css",
+    "main.js": "/labchild-react-portfolio/static/js/main.d133f4cf.js",
+    "static/js/787.7b311c03.chunk.js": "/labchild-react-portfolio/static/js/787.7b311c03.chunk.js",
+    "index.html": "/labchild-react-portfolio/index.html",
+    "main.7a72570f.css.map": "/labchild-react-portfolio/static/css/main.7a72570f.css.map",
+    "main.d133f4cf.js.map": "/labchild-react-portfolio/static/js/main.d133f4cf.js.map",
+    "787.7b311c03.chunk.js.map": "/labchild-react-portfolio/static/js/787.7b311c03.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a72570f.css",
+    "static/js/main.d133f4cf.js"
+  ]
+}
