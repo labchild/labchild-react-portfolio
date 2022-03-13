@@ -6,15 +6,14 @@ const Nav = (props) => {
         handleSectionSelect
     } = props;
     return (
-        <header className="flex-row">
-            <h2>
-                <a href="/">
-                    labchild
-                    <span>Lelah Bates Childs</span>
+        <header className="d-flex flex-row justify-content-between">
+            <h2 className="lead font-weight-bold">
+                <a href="/" className="text-secondary nav-link">
+                    Lelah Bates Childs
                 </a>
             </h2>
             <nav>
-                <ul className="flex-row">
+                <ul className="d-flex flex-row">
                     <li>
                         <a
                             href="#about"
