@@ -2,9 +2,8 @@ import React from "react";
 
 const Nav = (props) => {
     const {
-        categories,
-        currentCategory,
-        setCurrentCategory
+        currentSection,
+        handleSectionSelect
     } = props;
     return (
         <header className="flex-row">
@@ -17,22 +16,38 @@ const Nav = (props) => {
             <nav>
                 <ul className="flex-row">
                     <li>
-                        <a href="#about">
+                        <a
+                            href="#about"
+                            onClick={() => { handleSectionSelect('About') }}
+                            className={currentSection === 'About' ? 'nav-link active' : 'nav-link'}
+                        >
                             About Me
                         </a>
                     </li>
                     <li>
-                        <a href="#portfolio" onClick={() => setCurrentCategory(categories[1])}>
+                        <a
+                            href="#portfolio"
+                            onClick={() => { handleSectionSelect('Portfolio') }}
+                            className={currentSection === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+                        >
                             Portfolio
                         </a>
                     </li>
                     <li>
-                        <a href="#resume" onClick={() => setCurrentCategory(categories[2])}>
+                        <a
+                            href="#Resume"
+                            onClick={() => { handleSectionSelect('Resume') }}
+                            className={currentSection === 'Resume' ? 'nav-link active' : 'nav-link'}
+                        >
                             Resume <span class="fa fa-download"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="#contact" onClick={() => setCurrentCategory(categories[3])}>
+                        <a
+                            href="#contact"
+                            onClick={() => { handleSectionSelect('Contact') }}
+                            className={currentSection === 'Contact' ? 'nav-link active' : 'nav-link'}
+                        >
                             Contact Me
                         </a>
                     </li>

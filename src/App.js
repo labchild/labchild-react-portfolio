@@ -1,27 +1,45 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import Nav from './components/Nav';
-import Main from './components/Main';
 import About from './components/About';
+import ProjectList from './components/ProjectList';
+import Resume from './components/Resume';
+import ContactForm from './components/ContactForm';
 
 
 function App() {
   // category state for nav and rendering components
-  const categories = useState(['About Me', 'Portfolio', 'Resume', 'Contact Me']);
-  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  const [currentSection, setCurrentSection] = useState('About');
+  const renderSection = () => {
+    switch (currentSection) {
+      case 'About':
+        return <About />;
+      case 'Portfolio':
+        return <ProjectList />;
+      case 'Contact':
+        return <ContactForm />;
+      case 'Resume':
+        return <Resume />;
+    }
+  };
+
+  const handleSectionSelect = sectionTitle => setCurrentSection(sectionTitle);
 
   return (
     <div>
-      <Nav categories={categories} currentCategory={currentCategory} setCurrentCategory={setCurrentCategory}></Nav>
-      <div>
-        {currentCategory !== 'About Me' ? (
-          <Main currentCategory={currentCategory} />
-        ) : <About />}
+      <Nav
+        currentSection={currentSection}
+        handleSectionSelect={handleSectionSelect}
+      >
+      </Nav>
+      <main id="main">
         {/* about will always appear below everything else
       add portfolio (render conditional)
       add resume (render conditional) - show an "abstract", link for full resume download
       add contact form (render conditional, not modal) */}
-      </div>
+        {renderSection()}
+      </main>
+      {/* don't forget a footer*/}
     </div>
   );
 }
