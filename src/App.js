@@ -5,6 +5,7 @@ import About from './components/About';
 import ProjectList from './components/ProjectList';
 import Resume from './components/Resume';
 import ContactForm from './components/ContactForm';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -39,7 +40,7 @@ function App() {
       add contact form (render conditional, not modal) */}
         {renderSection()}
       </main>
-      {/* don't forget a footer*/}
+      <Footer />
     </div>
   );
 }
