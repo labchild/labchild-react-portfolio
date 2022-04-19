@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import Nav from './components/Nav';
 import About from './components/About';
@@ -6,11 +6,12 @@ import ProjectList from './components/ProjectList';
 import Resume from './components/Resume';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
+import Home from './components/Home';
 
 
 function App() {
   // category state for nav and rendering components
-  const [currentSection, setCurrentSection] = useState('About');
+  const [currentSection, setCurrentSection] = useState('Home');
   const renderSection = () => {
     switch (currentSection) {
       case 'About':
@@ -21,6 +22,10 @@ function App() {
         return <ContactForm />;
       case 'Resume':
         return <Resume />;
+      case 'Home':
+        return <Home />;
+      default:
+        return <Home />;
     }
   };
 

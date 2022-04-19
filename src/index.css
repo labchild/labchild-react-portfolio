@@ -33,3 +33,11 @@ footer {
 footer p {
   line-height: .80;
 }
+
+.avatar {
+  width: 30%;
+}
+
+.avatar img {
+  width: 100%;
+}
