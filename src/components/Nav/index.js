@@ -5,7 +5,41 @@ const Nav = (props) => {
         currentSection,
         handleSectionSelect
     } = props;
+
+    // useState for menu toggle (open/close) as boolean, change css class with handler
+    
+    // currentSection for nav-link highlight css class
+    // handleSectionSelect for render component on main
     return (
+        <header className='sidenav'>
+            <div>
+                <span onClick={handleMenuClick()}>open/close btn</span>
+            </div>
+
+            <nav>
+                <ul>
+                    <li>
+                        <span>About</span>
+                    </li>
+                    <li>
+                        <span>Work</span>
+                    </li>
+                    <li>
+                        <span>Resumé</span>
+                    </li>
+                    <li>
+                        <span>Contact</span>
+                    </li>
+                </ul>
+            </nav>
+
+            <article>
+                <h6>&copy;2022 labchild</h6>
+                <a target='_blank'>report an issue</a>
+            </article>
+        </header>
+    )
+    /* return (
         <header className="d-flex flex-row justify-content-between">
             <h2 className="lead font-weight-bold">
                 <a href="/" 
@@ -55,7 +89,7 @@ const Nav = (props) => {
                 </ul>
             </nav>
         </header>
-    )
+    ) */
 };
 
 export default Nav;
