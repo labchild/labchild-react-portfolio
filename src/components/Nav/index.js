@@ -1,16 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import Footer from '../Footer';
-import './index.css';
+import Footer from "../Footer";
+import "./index.css";
 
 const Nav = (props) => {
-  const { 
-    currentSection,
-    handleSectionSelect,
-    navIsOpen,
-    setNavIsOpen
-  } = props;
+  const { currentSection, handleSectionSelect, navIsOpen, setNavIsOpen } =
+    props;
 
   // const [navIsOpen, setNavIsOpen] = useState(false);
   // useState for menu toggle (open/close) as boolean, change css class with handler?
@@ -19,12 +15,12 @@ const Nav = (props) => {
   // handleSectionSelect for render component on main
 
   const handleMenuClose = () => {
-    console.log('close');
+    console.log("close");
     setNavIsOpen(false);
   };
 
   const handleMenuOpen = () => {
-    console.log('open');
+    console.log("open");
     setNavIsOpen(true);
   };
 
@@ -33,13 +29,13 @@ const Nav = (props) => {
       <div className="closebtn">
         {navIsOpen ? (
           <span
-          className="fa-solid fa-xmark"
-          onClick={() => handleMenuClose()}
+            className="fa-solid fa-xmark"
+            onClick={() => handleMenuClose()}
           ></span>
         ) : (
           <span
-          className="fa-solid fa-bars"
-          onClick={() => handleMenuOpen()}
+            className="fa-solid fa-bars"
+            onClick={() => handleMenuOpen()}
           ></span>
         )}
         {/* <span
@@ -51,17 +47,27 @@ const Nav = (props) => {
 
       <nav>
         <ul>
-          <li className="sidenav-link">
+          <li>
             <NavLink
               to="/about"
               onClick={() => {
                 handleSectionSelect("About");
               }}
               className={
-                currentSection === "About" ? "sidenav-link active" : ""
+                // currentSection === "About" ? "sidenav-link active" : ""
+                ({ isActive }) =>
+                  isActive && navIsOpen
+                    ? "sidenav-link navlink-active"
+                    : isActive && !navIsOpen
+                    ? "navlink-closed navlink-active"
+                    : !isActive && navIsOpen
+                    ? "sidenav-link"
+                    : "navlink-closed"
               }
             >
-              <span className={navIsOpen ? "" : "fa fa-download"}>{navIsOpen ? "About" : ""}</span>
+              <span className={navIsOpen ? "" : "fa fa-download"}>
+                {navIsOpen ? "About" : ""}
+              </span>
             </NavLink>
           </li>
           <li className="sidenav-link">
