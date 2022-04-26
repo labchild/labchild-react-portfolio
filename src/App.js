@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import "./App.css";
+
 import Nav from "./components/Nav";
 import About from "./components/About";
 import ProjectList from "./components/ProjectList";
 import Resume from "./components/Resume";
 import ContactForm from "./components/ContactForm";
-import Footer from "./components/Footer";
 import Home from "./components/Home";
+import "./App.css";
 
 function App() {
   // category state for nav and rendering components
@@ -55,7 +55,6 @@ function App() {
         )}
         {renderSection()}
       </main>
-      {/* <Footer navIsOpen={navIsOpen} setNavIsOpen={setNavIsOpen} /> */}
     </div>
   );
 }
