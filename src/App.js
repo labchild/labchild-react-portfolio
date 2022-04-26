@@ -39,7 +39,7 @@ function App() {
       >
       </Nav>
       <main id="main">
-        {/* about will always appear below everything else
+        {/* about will always appear below everything else?
       add portfolio (render conditional)
       add resume (render conditional) - show an "abstract", link for full resume download
       add contact form (render conditional, not modal) */}

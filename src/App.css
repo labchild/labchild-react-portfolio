@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    display:inline-block;
+    transition: margin-left .5s;
+    padding: 20px;
+  }
