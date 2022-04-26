@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+
 import Footer from '../Footer';
 import './index.css';
 
@@ -50,8 +52,8 @@ const Nav = (props) => {
       <nav>
         <ul>
           <li className="sidenav-link">
-            <a
-              href="#about"
+            <NavLink
+              to="/about"
               onClick={() => {
                 handleSectionSelect("About");
               }}
@@ -60,11 +62,11 @@ const Nav = (props) => {
               }
             >
               <span className={navIsOpen ? "" : "fa fa-download"}>{navIsOpen ? "About" : ""}</span>
-            </a>
+            </NavLink>
           </li>
           <li className="sidenav-link">
-            <a
-              href="#portfolio"
+            <NavLink
+              to="/portfolio"
               onClick={() => {
                 handleSectionSelect("Portfolio");
               }}
@@ -73,11 +75,11 @@ const Nav = (props) => {
               }
             >
               <span>Work</span>
-            </a>
+            </NavLink>
           </li>
           <li className="sidenav-link">
-            <a
-              href="#Resume"
+            <NavLink
+              to="resume"
               onClick={() => {
                 handleSectionSelect("Resume");
               }}
@@ -86,11 +88,11 @@ const Nav = (props) => {
               }
             >
               <span>Resumé</span>
-            </a>
+            </NavLink>
           </li>
           <li className="sidenav-link">
-            <a
-              href="#contact"
+            <NavLink
+              to="contact"
               onClick={() => {
                 handleSectionSelect("Contact");
               }}
@@ -99,7 +101,7 @@ const Nav = (props) => {
               }
             >
               <span>Contact</span>
-            </a>
+            </NavLink>
           </li>
         </ul>
       </nav>

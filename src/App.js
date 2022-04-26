@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Nav from "./components/Nav";
 import About from "./components/About";
@@ -11,7 +12,7 @@ import "./App.css";
 function App() {
   // category state for nav and rendering components
   const [currentSection, setCurrentSection] = useState("Home");
-  const renderSection = () => {
+  /* const renderSection = () => {
     switch (currentSection) {
       case "About":
         return <About />;
@@ -27,36 +28,46 @@ function App() {
         return <Home />;
     }
   };
-
+*/
   const handleSectionSelect = (sectionTitle) => setCurrentSection(sectionTitle);
 
   // set state for nav menu open and close
   const [navIsOpen, setNavIsOpen] = useState(false);
 
-  return (
-    <div>
-      <Nav
-        currentSection={currentSection}
-        handleSectionSelect={handleSectionSelect}
-        navIsOpen={navIsOpen}
-        setNavIsOpen={setNavIsOpen}
-      ></Nav>
-      <main id="main">
-        {/* about will always appear below everything else?
-      add portfolio (render conditional)
-      add resume (render conditional) - show an "abstract", link for full resume download
-      add contact form (render conditional, not modal) */}
-        {currentSection !== "Home" ? (
-          <h3 className="home-btn">
-            <a href="/">labchild</a>
-          </h3>
-        ) : (
-          ""
-        )}
-        {renderSection()}
-      </main>
-    </div>
-  );
+  function renderApp() {
+    return (
+      <div>
+        <Nav
+          currentSection={currentSection}
+          handleSectionSelect={handleSectionSelect}
+          navIsOpen={navIsOpen}
+          setNavIsOpen={setNavIsOpen}
+        ></Nav>
+        <main id="main">
+          {currentSection !== "Home" ? (
+              <h3 className="home-btn">
+                <a href="/">labchild</a>
+              </h3>
+            ) : (
+              ""
+            )}
+          <Routes>
+            
+
+            <Route path="/" element={<Home />} />
+            <Route path="/labchild-react-portfolio" element={<Home />} />
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/portfolio" element={<ProjectList />} />
+            <Route exact path="/resume" element={<Resume />} />
+            <Route exact path="/contact" element={<ContactForm />} />
+          </Routes>
+          {/* {renderSection()} */}
+        </main>
+      </div>
+    );
+  }
+
+  return <Router>{renderApp()}</Router>;
 }
 
 export default App;
