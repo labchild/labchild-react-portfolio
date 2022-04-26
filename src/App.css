@@ -2,9 +2,28 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-btn {
+  display: inline-block;
+  border-radius: 8px;
+  border: 0.2rem double #282c34;
+  font-size: 2em;
+  background-color: aquamarine;
+  color: #282c34;
+  padding: 1rem;
+}
+
+.home-btn:hover {
+  background-color: #282c34;
+  color: aquamarine;
+  border: 0.2rem double aquamarine;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  display: inline-block;
+  transition: margin-left 0.5s;
+  padding: 70px;
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {

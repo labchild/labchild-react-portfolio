@@ -5,13 +5,18 @@ const Resume = () => {
     <section className="m-4 p-2 text-secondary">
       <h1>Resume</h1>
       <div>
-          <p>Click here to download the full PDF</p>
+          <a
+          href="#"
+          download
+          >
+            Click here to download the full PDF
+          </a>
       </div>
       <h3 className="title">Education</h3>
       
       <p className="lead">Columbia University, New York, NY - <em>Certificate</em></p>
       <p>
-        Certificate in Full Stack Web Development.
+        Certificate in Full Stack Coding.
       </p>
 
       <p className="lead">Skidmore College, Saratoga Springs, NY - <em>B.S.</em></p>
