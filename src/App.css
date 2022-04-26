@@ -2,9 +2,8 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-btn {
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -41,5 +40,5 @@
   #main {
     display:inline-block;
     transition: margin-left .5s;
-    padding: 20px;
+    padding: 70px;
   }

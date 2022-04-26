@@ -1,21 +1,50 @@
-import React, { useState } from "react";
+import React from "react";
+import Footer from '../Footer';
+import './index.css';
 
 const Nav = (props) => {
-  const { currentSection, handleSectionSelect } = props;
+  const { 
+    currentSection,
+    handleSectionSelect,
+    navIsOpen,
+    setNavIsOpen
+  } = props;
 
-  const [navIsOpen, setNavIsOpen] = useState(false);
+  // const [navIsOpen, setNavIsOpen] = useState(false);
   // useState for menu toggle (open/close) as boolean, change css class with handler?
 
   // currentSection for nav-link highlight css class
   // handleSectionSelect for render component on main
+
+  const handleMenuClose = () => {
+    console.log('close');
+    setNavIsOpen(false);
+  };
+
+  const handleMenuOpen = () => {
+    console.log('open');
+    setNavIsOpen(true);
+  };
+
   return (
-    <header className="sidenav">
-      <div>
-        <span
+    <header className={navIsOpen ? "sidenav show-nav" : "sidenav hide-nav"}>
+      <div className="closebtn">
+        {navIsOpen ? (
+          <span
+          className="fa-solid fa-xmark"
+          onClick={() => handleMenuClose()}
+          ></span>
+        ) : (
+          <span
+          className="fa-solid fa-bars"
+          onClick={() => handleMenuOpen()}
+          ></span>
+        )}
+        {/* <span
         // onClick={handleMenuClick()}
         >
           open/close btn
-        </span>
+        </span> */}
       </div>
 
       <nav>
@@ -76,8 +105,7 @@ const Nav = (props) => {
       </nav>
 
       <article>
-        <h6>&copy;2022 labchild</h6>
-        <a target="_blank">report an issue</a>
+        <Footer navIsOpen={navIsOpen} setNavIsOpen={setNavIsOpen} />
       </article>
     </header>
   );

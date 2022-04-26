@@ -21,19 +21,6 @@ li {
   list-style-type: none;
 }
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: #7A897F;
-  text-align: center;
-}
-
-footer p {
-  line-height: .80;
-}
-
 .avatar {
   width: 30%;
 }
