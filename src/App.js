@@ -29,7 +29,10 @@ function App() {
     }
   };
 */
-  const handleSectionSelect = (sectionTitle) => setCurrentSection(sectionTitle);
+  const handleSectionSelect = (sectionTitle) => {
+    document.title = `LBC | ${sectionTitle}`;
+    setCurrentSection(sectionTitle);
+  }
 
   // set state for nav menu open and close
   const [navIsOpen, setNavIsOpen] = useState(false);
@@ -52,8 +55,6 @@ function App() {
               ""
             )}
           <Routes>
-            
-
             <Route path="/" element={<Home />} />
             <Route path="/labchild-react-portfolio" element={<Home />} />
             <Route exact path="/about" element={<About />} />
@@ -65,7 +66,7 @@ function App() {
         </main>
       </div>
     );
-  }
+  };
 
   return <Router>{renderApp()}</Router>;
 }
