@@ -24,7 +24,7 @@ const Nav = (props) => {
   };
 
   return (
-    <header className={navIsOpen ? "sidenav show-nav" : "sidenav hide-nav"}>
+    <header className={navIsOpen ? "sidenav show-nav" : "sidenav"}>
       <div className="closebtn">
         {navIsOpen ? (
           <span

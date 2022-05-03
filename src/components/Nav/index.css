@@ -8,9 +8,9 @@ nav ul {
 }
 
 .sidenav {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: inline-block;
+  /* flex-direction: column;
+  justify-content: space-between; */
   height: 100%; /* 100% Full-height */
   width: 3rem; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
