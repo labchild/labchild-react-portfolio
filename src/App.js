@@ -57,7 +57,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/labchild-react-portfolio" element={<Home />} />
-            <Route exact path="/about" element={<About />} />
+            <Route path="/about" element={<About />} />
             <Route exact path="/portfolio" element={<ProjectList />} />
             <Route exact path="/resume" element={<Resume />} />
             <Route exact path="/contact" element={<ContactForm />} />

@@ -5,8 +5,7 @@ import Footer from "../Footer";
 import "./index.css";
 
 const Nav = (props) => {
-  const { currentSection, handleSectionSelect, navIsOpen, setNavIsOpen } =
-    props;
+  const { handleSectionSelect, navIsOpen, setNavIsOpen } = props;
 
   // const [navIsOpen, setNavIsOpen] = useState(false);
   // useState for menu toggle (open/close) as boolean, change css class with handler?
@@ -54,54 +53,82 @@ const Nav = (props) => {
                   isActive && navIsOpen
                     ? "sidenav-link navlink-active"
                     : isActive && !navIsOpen
-                    ? "navlink-closed navlink-active"
+                    ? "sidenav-link navlink-closed navlink-active"
                     : !isActive && navIsOpen
                     ? "sidenav-link"
-                    : "navlink-closed"
+                    : "sidenav-link navlink-closed"
               }
             >
               <span className={navIsOpen ? "" : "fa fa-download"}>
-                {navIsOpen ? "About" : ""}
+                {navIsOpen ? "about" : ""}
               </span>
             </NavLink>
           </li>
-          <li className="sidenav-link">
+          <li>
             <NavLink
               to="/portfolio"
               onClick={() => {
                 handleSectionSelect("Portfolio");
               }}
-              className={
-                currentSection === "Portfolio" ? "nav-link active" : "nav-link"
+              className={({ isActive }) =>
+                isActive && navIsOpen
+                  ? "sidenav-link navlink-active"
+                  : isActive && !navIsOpen
+                  ? "sidenav-link navlink-closed navlink-active"
+                  : !isActive && navIsOpen
+                  ? "sidenav-link"
+                  : "sidenav-link navlink-closed"
               }
             >
-              <span>Work</span>
+              <span className={navIsOpen ? "" : "fa fa-download"}>
+                {navIsOpen ? "work" : ""}
+              </span>
             </NavLink>
           </li>
-          <li className="sidenav-link">
+          <li>
             <NavLink
-              to="resume"
+              to="/resume"
               onClick={() => {
                 handleSectionSelect("Resume");
               }}
               className={
-                currentSection === "Resume" ? "nav-link active" : "nav-link"
+                // currentSection === "About" ? "sidenav-link active" : ""
+                ({ isActive }) =>
+                  isActive && navIsOpen
+                    ? "sidenav-link navlink-active"
+                    : isActive && !navIsOpen
+                    ? "sidenav-link navlink-closed navlink-active"
+                    : !isActive && navIsOpen
+                    ? "sidenav-link"
+                    : "sidenav-link navlink-closed"
               }
             >
-              <span>Resumé</span>
+              <span className={navIsOpen ? "" : "fa fa-download"}>
+                {navIsOpen ? "resumé" : ""}
+              </span>
             </NavLink>
           </li>
-          <li className="sidenav-link">
+          <li>
             <NavLink
               to="contact"
               onClick={() => {
                 handleSectionSelect("Contact");
               }}
               className={
-                currentSection === "Contact" ? "nav-link active" : "nav-link"
+                // currentSection === "About" ? "sidenav-link active" : ""
+                ({ isActive }) =>
+                  isActive && navIsOpen
+                    ? "sidenav-link navlink-active"
+                    : isActive && !navIsOpen
+                    ? "sidenav-link navlink-closed navlink-active"
+                    : !isActive && navIsOpen
+                    ? "sidenav-link"
+                    : "sidenav-link navlink-closed"
               }
             >
-              <span>Contact</span>
+              <span className={navIsOpen ? "" : "fa fa-download"}>
+                {navIsOpen ? "contact" : ""}
+              </span>
             </NavLink>
           </li>
         </ul>
