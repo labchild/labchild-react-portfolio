@@ -38,11 +38,6 @@ const Nav = (props) => {
             onClick={() => handleMenuOpen()}
           ></span>
         )}
-        {/* <span
-        // onClick={handleMenuClick()}
-        >
-          open/close btn
-        </span> */}
       </div>
 
       <nav>

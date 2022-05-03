@@ -1,8 +1,8 @@
 import React from "react";
 import "./index.css";
 
-const Footer = (props) => {
-  const { navIsOpen, setNavIsOpen } = props;
+const Footer = ( {navIsOpen} ) => {
+
 
   return (
     <footer>
@@ -13,6 +13,7 @@ const Footer = (props) => {
             <a
               href="https://github.com/labchild/labchild-react-portfolio/issues"
               target="_blank"
+              rel="noreferrer"
             >
               <span className="fa-brands fa-github"></span> Report an issue
             </a>
@@ -23,6 +24,7 @@ const Footer = (props) => {
           <a
             href="https://github.com/labchild/labchild-react-portfolio/issues"
             target="_blank"
+            rel="noreferrer"
           >
             <span className="fa-brands fa-github"></span>
           </a>

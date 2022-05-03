@@ -1,16 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import pdf from "../../assets/documents/lbchilds-resume.pdf";
 
 const Resume = () => {
   return (
     <section className="m-4 p-2 text-secondary">
       <h1>Resume</h1>
       <div>
-          <a
-          href="#"
-          download
+          <Link
+          to={pdf}
+          target="_blank"
+          download="lbchilds-resume.pdf"
           >
             Click here to download the full PDF
-          </a>
+          </Link>
       </div>
       <h3 className="title">Education</h3>
       
