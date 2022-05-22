@@ -8,6 +8,9 @@ import {
   faUserAstronaut,
   faAt,
   faCode,
+  faXmark,
+  faBars,
+  faFileLines
 } from "@fortawesome/free-solid-svg-icons";
 
 // my components
@@ -20,28 +23,20 @@ import Home from "./components/Home";
 import "./App.css";
 
 // custom icon library
-library.add(faCloudArrowDown, faUserAstronaut, faAt, faCode, fab);
+library.add(
+  faCloudArrowDown,
+  faUserAstronaut,
+  faAt,
+  faCode,
+  fab,
+  faXmark,
+  faBars,
+  faFileLines
+);
 
 function App() {
   // category state for nav and rendering components
   const [currentSection, setCurrentSection] = useState("Home");
-  /* const renderSection = () => {
-    switch (currentSection) {
-      case "About":
-        return <About />;
-      case "Portfolio":
-        return <ProjectList />;
-      case "Contact":
-        return <ContactForm />;
-      case "Resume":
-        return <Resume />;
-      case "Home":
-        return <Home />;
-      default:
-        return <Home />;
-    }
-  };
-*/
   const handleSectionSelect = (sectionTitle) => {
     document.title = `LBC | ${sectionTitle}`;
     setCurrentSection(sectionTitle);
@@ -75,7 +70,6 @@ function App() {
             <Route exact path="/resume" element={<Resume />} />
             <Route exact path="/contact" element={<ContactForm />} />
           </Routes>
-          {/* {renderSection()} */}
         </main>
       </div>
     );

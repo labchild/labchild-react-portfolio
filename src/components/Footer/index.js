@@ -1,4 +1,5 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./index.css";
 
 const Footer = ( {navIsOpen} ) => {
@@ -15,7 +16,7 @@ const Footer = ( {navIsOpen} ) => {
               target="_blank"
               rel="noreferrer"
             >
-              <span className="fa-brands fa-github"></span> Report an issue
+              <FontAwesomeIcon icon="fa-brands fa-github" /> Report an issue
             </a>
           </p>
         </>
@@ -26,7 +27,7 @@ const Footer = ( {navIsOpen} ) => {
             target="_blank"
             rel="noreferrer"
           >
-            <span className="fa-brands fa-github"></span>
+            <FontAwesomeIcon icon="fa-brands fa-github" />
           </a>
         </p>
       )}

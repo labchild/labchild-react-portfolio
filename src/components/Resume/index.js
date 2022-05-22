@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import pdf from "../../assets/documents/lbchilds-resume.pdf";
 
 const Resume = () => {
@@ -12,7 +13,7 @@ const Resume = () => {
           target="_blank"
           download="lbchilds-resume.pdf"
           >
-            Click here to download the full PDF
+            <FontAwesomeIcon icon="fa-solid fa-cloud-arrow-down" /> download the full pdf
           </Link>
       </div>
       <h3 className="title">Education</h3>

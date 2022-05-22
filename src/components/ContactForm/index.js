@@ -1,4 +1,5 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ContactForm = () => {
   return (
@@ -10,13 +11,22 @@ const ContactForm = () => {
       </p>
       <ul>
         <li>
-          <a href="https://github.com/labchild" target="_blank" rel="noreferrer">
-            <span className="fa-brands fa-github"></span> @labchild on Github
+          <a
+            href="https://github.com/labchild"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon="fa-brands fa-github" /> @labchild on Github
           </a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/lelah-bates-childs-a6342a102/" target="_blank" rel="noreferrer">
-            <span className="fa-brands fa-linkedin"></span> Lelah Bates Childs on LinkedIn
+          <a
+            href="https://www.linkedin.com/in/lelah-bates-childs-a6342a102/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon icon="fa-brands fa-linkedin" /> Lelah Bates Childs
+            on LinkedIn
           </a>
         </li>
       </ul>
