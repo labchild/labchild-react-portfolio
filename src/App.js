@@ -1,6 +1,16 @@
+// packages
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import {
+  faCloudArrowDown,
+  faUserAstronaut,
+  faAt,
+  faCode,
+} from "@fortawesome/free-solid-svg-icons";
 
+// my components
 import Nav from "./components/Nav";
 import About from "./components/About";
 import ProjectList from "./components/ProjectList";
@@ -8,6 +18,9 @@ import Resume from "./components/Resume";
 import ContactForm from "./components/ContactForm";
 import Home from "./components/Home";
 import "./App.css";
+
+// custom icon library
+library.add(faCloudArrowDown, faUserAstronaut, faAt, faCode, fab);
 
 function App() {
   // category state for nav and rendering components
@@ -32,7 +45,7 @@ function App() {
   const handleSectionSelect = (sectionTitle) => {
     document.title = `LBC | ${sectionTitle}`;
     setCurrentSection(sectionTitle);
-  }
+  };
 
   // set state for nav menu open and close
   const [navIsOpen, setNavIsOpen] = useState(false);
@@ -48,12 +61,12 @@ function App() {
         ></Nav>
         <main id="main">
           {currentSection !== "Home" ? (
-              <h3 className="home-btn">
-                <a href="/">labchild</a>
-              </h3>
-            ) : (
-              ""
-            )}
+            <h3 className="home-btn">
+              <a href="/">labchild</a>
+            </h3>
+          ) : (
+            ""
+          )}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/labchild-react-portfolio" element={<Home />} />
@@ -66,7 +79,7 @@ function App() {
         </main>
       </div>
     );
-  };
+  }
 
   return <Router>{renderApp()}</Router>;
 }

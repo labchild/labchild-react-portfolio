@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import {} from "@fortawesome/free-solid-svg-icons"
 
 import Footer from "../Footer";
 import "./index.css";
