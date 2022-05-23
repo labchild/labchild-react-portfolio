@@ -10,7 +10,7 @@ import {
   faCode,
   faXmark,
   faBars,
-  faFileLines
+  faFileLines,
 } from "@fortawesome/free-solid-svg-icons";
 
 // my components
@@ -47,7 +47,7 @@ function App() {
 
   function renderApp() {
     return (
-      <div>
+      <>
         <Nav
           currentSection={currentSection}
           handleSectionSelect={handleSectionSelect}
@@ -64,14 +64,22 @@ function App() {
           )}
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/labchild-react-portfolio" element={<Home />} />
+            <Route
+              path="/labchild-react-portfolio"
+              element={
+                <Home
+                  currentSection={currentSection}
+                  handleSectionSelect={handleSectionSelect}
+                />
+              }
+            />
             <Route path="/about" element={<About />} />
             <Route exact path="/portfolio" element={<ProjectList />} />
             <Route exact path="/resume" element={<Resume />} />
             <Route exact path="/contact" element={<ContactForm />} />
           </Routes>
         </main>
-      </div>
+      </>
     );
   }
 

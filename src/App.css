@@ -1,3 +1,7 @@
+:root {
+  --main-font: 'Roboto Flex', sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -19,34 +23,73 @@
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: aliceblue;
+}
+
+#root {
+  margin:auto;
+  text-align: center;
+  height: 100vh;
+  width:100vw;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+li {
+  list-style-type: none;
+}
+
+.avatar {
+  width: 30%;
+}
+
+.avatar img {
+  width: 100%;
+}
+
+/* css animation for main with menu */
 #main {
   display: inline-block;
   transition: margin-left 0.5s;
-  padding: 70px;
+  /* padding: 70px; */
   text-align: center;
+  width: calc(100% - 3rem);
+  height: 100vh;
+  margin: 0 0 0 3rem;
 }
 
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* text/font styles */
+.title {
+  font-family: Azedo;
+  font-size: 10rem;
+  color: aqua;
+  opacity: .5;
+  margin: 0 auto;
+  text-align: right;
 }
 
-.App-link {
-  color: #61dafb;
+.subtitle {
+  text-align: center;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 3rem;
+  margin: 0 auto 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-block {
+ text-align: center;
 }

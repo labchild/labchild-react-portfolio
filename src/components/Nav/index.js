@@ -34,7 +34,7 @@ const Nav = (props) => {
         )}
       </div>
 
-      <nav>
+      <nav className="menu">
         <ul>
           <li>
             <NavLink
@@ -133,9 +133,7 @@ const Nav = (props) => {
         </ul>
       </nav>
 
-      <article>
-        <Footer navIsOpen={navIsOpen} setNavIsOpen={setNavIsOpen} />
-      </article>
+      <Footer navIsOpen={navIsOpen} setNavIsOpen={setNavIsOpen} />
     </header>
   );
 };

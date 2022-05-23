@@ -28,6 +28,12 @@ nav ul {
   width: 200px;
 }
 
+.menu {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -60%);
+}
+
 /* The navigation menu links */
 .sidenav-link {
   padding: 8px 8px 8px 32px;

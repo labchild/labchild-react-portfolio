@@ -15,6 +15,8 @@ body {
 #root {
   margin:auto;
   text-align: center;
+  height: 100vh;
+  width:100vw;
 }
 
 code {
@@ -22,22 +24,16 @@ code {
     monospace;
 }
 
-li {
-  list-style-type: none;
+/* my stuff */
+@font-face {
+  font-family: 'Ultra';
+  src: local('Ultra'), url(./assets/fonts/Ultra.otf) format('opentype');
 }
-
-.avatar {
-  width: 30%;
+@font-face {
+  font-family: 'Azedo';
+  src: local('Azedo'), url(./assets/fonts/Azedo-Light.otf) format('opentype');
 }
-
-.avatar img {
-  width: 100%;
-}
-
-/* css animation for main with menu */
-#main {
-  display: inline-block;
-  transition: margin-left 0.5s;
-  padding: 70px;
-  text-align: center;
+@font-face {
+  font-family: 'Azedo Bold';
+  src: local('Azedo Bold'), url(./assets/fonts/Azedo-Bold.otf) format('opentype');
 }
