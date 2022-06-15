@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import pdf from "../../assets/documents/lbchilds-resume.pdf";
+import pdf from "../../assets/documents/resume.pdf";
 
 const Resume = () => {
   return (
