@@ -1,25 +1,42 @@
+/* simple css helpers for components */
 :root {
   --main-font: 'Roboto Flex', sans-serif;
+  --accent-color: #8deb80;
+  --black: #010101;
+  --dk-grey: #1c1c1c;
+  --grey: #4a4a4a;
+  --lt-grey: #b0b3b8;
+  --white: #e4e6eb;
 }
 
-.App {
-  text-align: center;
+#root {
+  background-color: var(--black);
+}
+
+p {
+  color: var(--white);
 }
 
 .home-btn {
   display: inline-block;
-  border-radius: 8px;
-  border: 0.2rem double #282c34;
+  border-radius: 80px;
+  border: 0.2rem double var(--accent-color);
   font-size: 2em;
-  background-color: aquamarine;
-  color: #282c34;
+  background-color: var(--dk-grey);
+  color: var(--accent-color);
   padding: 1rem;
 }
 
+.home-btn a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
 .home-btn:hover {
-  background-color: #282c34;
+
+  /* background-color: #282c34;
   color: aquamarine;
-  border: 0.2rem double aquamarine;
+  border: 0.2rem double aquamarine; */
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
