@@ -32,12 +32,11 @@ p {
   text-decoration: none;
 }
 
-.home-btn:hover {
-
+/*.home-btn:hover {
   /* background-color: #282c34;
   color: aquamarine;
-  border: 0.2rem double aquamarine; */
-}
+  border: 0.2rem double aquamarine;
+}*/
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 * {
