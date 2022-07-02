@@ -10,6 +10,10 @@
 }
 
 #root {
+  margin:auto;
+  text-align: center;
+  height: 100vh;
+  width:100vw;
   background-color: var(--black);
 }
 
@@ -53,13 +57,6 @@ body {
   background-color: aliceblue;
 }
 
-#root {
-  margin:auto;
-  text-align: center;
-  height: 100vh;
-  width:100vw;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -81,7 +78,6 @@ li {
 #main {
   display: inline-block;
   transition: margin-left 0.5s;
-  /* padding: 70px; */
   text-align: center;
   width: calc(100% - 3rem);
   height: 100vh;
@@ -90,9 +86,10 @@ li {
 
 /* text/font styles */
 .title {
-  font-family: Azedo;
+  font-family: Azedo, "Andale Mono";
   font-size: 10rem;
-  color: aqua;
+  /* text-transform: uppercase; */
+  color: var(--accent-color);
   opacity: .5;
   margin: 0 auto;
   text-align: right;
@@ -100,12 +97,22 @@ li {
 
 .subtitle {
   text-align: center;
-  font-family: var(--main-font);
+  font-family: "Andale Mono", var(--main-font);
   font-weight: 500;
   font-size: 3rem;
   margin: 0 auto 1rem;
+  color: var(--white);
 }
 
 .text-block {
  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.content {
+  overflow-y: scroll;
+  height: 80vh;
 }

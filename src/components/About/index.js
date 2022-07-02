@@ -3,7 +3,7 @@ import avatar from "../../assets/images/avatar.JPG";
 
 const About = () => {
   return (
-    <section className="m-4 p-2 text-secondary">
+    <section className="content">
       <h1>About Me</h1>
       <div className="d-flex flex-row justify-content-between flex-wrap row">
         <div className='avatar col-md-3'>

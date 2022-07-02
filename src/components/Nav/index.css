@@ -14,7 +14,7 @@ nav ul {
   height: 100%; /* 100% Full-height */
   width: 3rem; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  z-index: 999; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
@@ -31,14 +31,15 @@ nav ul {
 .menu {
   position: absolute;
   top: 50%;
-  transform: translate(0, -60%);
+  left: 50%;
+  transform: translate(-50%, -60%);
 }
 
 /* The navigation menu links */
 .sidenav-link {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 0 8px 0;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.25em;
   /* color: #818181; */
   display: block;
   transition: 0.3s;
@@ -47,6 +48,7 @@ nav ul {
 
 .navlink-closed {
   padding: 8px;
+  font-weight: 200;
 }
 
 .navlink-active {

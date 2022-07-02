@@ -55,13 +55,9 @@ function App() {
           setNavIsOpen={setNavIsOpen}
         ></Nav>
         <main id="main">
-          {currentSection !== "Home" ? (
-            <h3 className="home-btn">
+            <h3 className={currentSection === "Home" ? "hide" : "home-btn" }>
               <a href="/">labchild</a>
             </h3>
-          ) : (
-            ""
-          )}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route
@@ -73,10 +69,45 @@ function App() {
                 />
               }
             />
-            <Route path="/about" element={<About />} />
-            <Route exact path="/portfolio" element={<ProjectList />} />
-            <Route exact path="/resume" element={<Resume />} />
-            <Route exact path="/contact" element={<ContactForm />} />
+            <Route
+              path="/about"
+              element={
+                <About
+                  currentSection={currentSection}
+                  handleSectionSelect={handleSectionSelect}
+                />
+              }
+            />
+            <Route
+              exact
+              path="/portfolio"
+              element={
+                <ProjectList
+                  currentSection={currentSection}
+                  handleSectionSelect={handleSectionSelect}
+                />
+              }
+            />
+            <Route
+              exact
+              path="/resume"
+              element={
+                <Resume
+                  currentSection={currentSection}
+                  handleSectionSelect={handleSectionSelect}
+                />
+              }
+            />
+            <Route
+              exact
+              path="/contact"
+              element={
+                <ContactForm
+                  currentSection={currentSection}
+                  handleSectionSelect={handleSectionSelect}
+                />
+              }
+            />
           </Routes>
         </main>
       </>
