@@ -55,7 +55,10 @@ const Nav = (props) => {
               }
             >
               {navIsOpen ? (
-                "about"
+                <>
+                  <FontAwesomeIcon icon="fa-solid fa-user-astronaut" />
+                  <span> about</span>
+                </>
               ) : (
                 <FontAwesomeIcon icon="fa-solid fa-user-astronaut" />
               )}
@@ -77,7 +80,14 @@ const Nav = (props) => {
                   : "sidenav-link navlink-closed"
               }
             >
-              {navIsOpen ? "work" : <FontAwesomeIcon icon="fa-solid fa-code" />}
+              {navIsOpen ? (
+                <>
+                  <FontAwesomeIcon icon="fa-solid fa-code" />
+                  <span> projects</span>
+                </>
+              ) : (
+                <FontAwesomeIcon icon="fa-solid fa-code" />
+              )}
             </NavLink>
           </li>
           <li>
@@ -99,7 +109,10 @@ const Nav = (props) => {
               }
             >
               {navIsOpen ? (
-                "resumé"
+                <>
+                  <FontAwesomeIcon icon="fa-solid fa-file-lines" />
+                  <span> resumé</span>
+                </>
               ) : (
                 <FontAwesomeIcon icon="fa-solid fa-file-lines" />
               )}
@@ -124,7 +137,10 @@ const Nav = (props) => {
               }
             >
               {navIsOpen ? (
-                "contact"
+                <>
+                  <FontAwesomeIcon icon="fa-solid fa-at" />
+                  <span> contact</span>
+                </>
               ) : (
                 <FontAwesomeIcon icon="fa-solid fa-at" />
               )}

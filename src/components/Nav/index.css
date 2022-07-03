@@ -31,8 +31,9 @@ nav ul {
 .menu {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -60%);
+  transform: translate(0, -60%);
+  text-align: center;
+  width: 100%;
 }
 
 /* The navigation menu links */
@@ -40,10 +41,14 @@ nav ul {
   padding: 8px 0 8px 0;
   text-decoration: none;
   font-size: 1.25em;
-  /* color: #818181; */
   display: block;
   transition: 0.3s;
   color:var(--lt-grey);
+  overflow-x: hidden;
+}
+
+.sidenav-link span {
+  margin-left: 10px;
 }
 
 .navlink-closed {

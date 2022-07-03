@@ -104,10 +104,6 @@ li {
   color: var(--white);
 }
 
-.text-block {
- text-align: center;
-}
-
 .hide {
   display: none;
 }
@@ -115,4 +111,16 @@ li {
 .content {
   overflow-y: scroll;
   height: 80vh;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
 }
