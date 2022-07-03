@@ -56,10 +56,9 @@ function App() {
         ></Nav>
         <main id="main">
             <h3 className={currentSection === "Home" ? "hide" : "home-btn" }>
-              <a href="/">labchild</a>
+              <a href="/labchild-react-portfolio">labchild</a>
             </h3>
           <Routes>
-            <Route path="/" element={<Home />} />
             <Route
               path="/labchild-react-portfolio"
               element={
