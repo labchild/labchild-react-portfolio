@@ -1,15 +1,18 @@
 import React from "react";
 
 const ProjectList = () => {
-    return (
-        <section className="m-4 p-2 text-secondary">
-        <h1>My Work</h1>
-        <p>
-            This section coming soon. For now, you can see my work on
-            <a href="https://github.com/labchild" target='_blank'>GitHub</a>.
-        </p>
+
+  // pass image, project name, deployed url and gh repo url as props
+  // .map the array of data
+  return (
+    <section className="content">
+      <h1 className="title">projects</h1>
+      <div className="details">
+        <p>under construction until July 5 2022</p>
+      </div>
     </section>
-    )
+  );
+
 };
 
 export default ProjectList;

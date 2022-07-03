@@ -1,59 +1,158 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import Footer from "../Footer";
+import "./index.css";
 
 const Nav = (props) => {
-    const {
-        currentSection,
-        handleSectionSelect
-    } = props;
-    return (
-        <header className="d-flex flex-row justify-content-between">
-            <h2 className="lead font-weight-bold">
-                <a href="/" className="text-secondary nav-link" onClick={() => { handleSectionSelect('About') }}>
-                    Lelah Bates Childs
-                </a>
-            </h2>
-            <nav>
-                <ul className="d-flex flex-row">
-                    <li>
-                        <a
-                            href="#about"
-                            onClick={() => { handleSectionSelect('About') }}
-                            className={currentSection === 'About' ? 'nav-link active' : 'nav-link'}
-                        >
-                            About Me
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="#portfolio"
-                            onClick={() => { handleSectionSelect('Portfolio') }}
-                            className={currentSection === 'Portfolio' ? 'nav-link active' : 'nav-link'}
-                        >
-                            Portfolio
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="#Resume"
-                            onClick={() => { handleSectionSelect('Resume') }}
-                            className={currentSection === 'Resume' ? 'nav-link active' : 'nav-link'}
-                        >
-                            Resume <span class="fa fa-download"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="#contact"
-                            onClick={() => { handleSectionSelect('Contact') }}
-                            className={currentSection === 'Contact' ? 'nav-link active' : 'nav-link'}
-                        >
-                            Contact Me
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    )
+
+  const { handleSectionSelect, navIsOpen, setNavIsOpen } = props;
+
+  const handleMenuClose = () => {
+    console.log("close");
+    setNavIsOpen(false);
+  };
+
+  const handleMenuOpen = () => {
+    console.log("open");
+    setNavIsOpen(true);
+  };
+
+  return (
+    <header className={navIsOpen ? "sidenav show-nav" : "sidenav"}>
+      <div className="closebtn">
+        {navIsOpen ? (
+          <FontAwesomeIcon
+            icon="fa-solid fa-xmark"
+            onClick={() => handleMenuClose()}
+          />
+        ) : (
+          <FontAwesomeIcon
+            icon="fa-solid fa-bars"
+            onClick={() => handleMenuOpen()}
+          />
+        )}
+      </div>
+
+      <nav className="menu">
+        <ul>
+          <li>
+            <NavLink
+              to="/about"
+              onClick={() => {
+                handleSectionSelect("About");
+              }}
+              className={
+                // currentSection === "About" ? "sidenav-link active" : ""
+                ({ isActive }) =>
+                  isActive && navIsOpen
+                    ? "sidenav-link navlink-active"
+                    : isActive && !navIsOpen
+                    ? "sidenav-link navlink-closed navlink-active"
+                    : !isActive && navIsOpen
+                    ? "sidenav-link"
+                    : "sidenav-link navlink-closed"
+              }
+            >
+              {navIsOpen ? (
+                <>
+                  <FontAwesomeIcon icon="fa-solid fa-user-astronaut" />
+                  <span> about</span>
+                </>
+              ) : (
+                <FontAwesomeIcon icon="fa-solid fa-user-astronaut" />
+              )}
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/portfolio"
+              onClick={() => {
+                handleSectionSelect("Portfolio");
+              }}
+              className={({ isActive }) =>
+                isActive && navIsOpen
+                  ? "sidenav-link navlink-active"
+                  : isActive && !navIsOpen
+                  ? "sidenav-link navlink-closed navlink-active"
+                  : !isActive && navIsOpen
+                  ? "sidenav-link"
+                  : "sidenav-link navlink-closed"
+              }
+            >
+              {navIsOpen ? (
+                <>
+                  <FontAwesomeIcon icon="fa-solid fa-code" />
+                  <span> projects</span>
+                </>
+              ) : (
+                <FontAwesomeIcon icon="fa-solid fa-code" />
+              )}
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/resume"
+              onClick={() => {
+                handleSectionSelect("Resume");
+              }}
+              className={
+                // currentSection === "About" ? "sidenav-link active" : ""
+                ({ isActive }) =>
+                  isActive && navIsOpen
+                    ? "sidenav-link navlink-active"
+                    : isActive && !navIsOpen
+                    ? "sidenav-link navlink-closed navlink-active"
+                    : !isActive && navIsOpen
+                    ? "sidenav-link"
+                    : "sidenav-link navlink-closed"
+              }
+            >
+              {navIsOpen ? (
+                <>
+                  <FontAwesomeIcon icon="fa-solid fa-file-lines" />
+                  <span> resumé</span>
+                </>
+              ) : (
+                <FontAwesomeIcon icon="fa-solid fa-file-lines" />
+              )}
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="contact"
+              onClick={() => {
+                handleSectionSelect("Contact");
+              }}
+              className={
+                // currentSection === "About" ? "sidenav-link active" : ""
+                ({ isActive }) =>
+                  isActive && navIsOpen
+                    ? "sidenav-link navlink-active"
+                    : isActive && !navIsOpen
+                    ? "sidenav-link navlink-closed navlink-active"
+                    : !isActive && navIsOpen
+                    ? "sidenav-link"
+                    : "sidenav-link navlink-closed"
+              }
+            >
+              {navIsOpen ? (
+                <>
+                  <FontAwesomeIcon icon="fa-solid fa-at" />
+                  <span> contact</span>
+                </>
+              ) : (
+                <FontAwesomeIcon icon="fa-solid fa-at" />
+              )}
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+
+      <Footer navIsOpen={navIsOpen} setNavIsOpen={setNavIsOpen} />
+    </header>
+  );
 };
 
 export default Nav;
