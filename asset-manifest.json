@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/labchild-react-portfolio/static/css/main.a3933f2b.css",
-    "main.js": "/labchild-react-portfolio/static/js/main.029766ee.js",
+    "main.js": "/labchild-react-portfolio/static/js/main.1d879dff.js",
     "static/js/787.7b311c03.chunk.js": "/labchild-react-portfolio/static/js/787.7b311c03.chunk.js",
     "static/media/avatar.JPG": "/labchild-react-portfolio/static/media/avatar.ccde54b74608bc44f21d.JPG",
     "static/media/resume-lgt.pdf": "/labchild-react-portfolio/static/media/resume-lgt.6848d20ad404ef221cc5.pdf",
@@ -10,11 +10,11 @@
     "static/media/Azedo-Bold.otf": "/labchild-react-portfolio/static/media/Azedo-Bold.f57b4f72108a34a8cd39.otf",
     "index.html": "/labchild-react-portfolio/index.html",
     "main.a3933f2b.css.map": "/labchild-react-portfolio/static/css/main.a3933f2b.css.map",
-    "main.029766ee.js.map": "/labchild-react-portfolio/static/js/main.029766ee.js.map",
+    "main.1d879dff.js.map": "/labchild-react-portfolio/static/js/main.1d879dff.js.map",
     "787.7b311c03.chunk.js.map": "/labchild-react-portfolio/static/js/787.7b311c03.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a3933f2b.css",
-    "static/js/main.029766ee.js"
+    "static/js/main.1d879dff.js"
   ]
 }
