@@ -15,7 +15,7 @@ This is a portfolio to showcase the work I did while enrolled in Columbia Univer
 Once you've cloned or downloaded this project to your local machine, navigate to the project's root directory in your CLI. Then, run ```npm i``` to install all dependencies.
 
 ## Usage
-Visit the site [here](). Once there, you can click any of the navigation links to visit that page, or my name to return to the homepage.
+Visit the site [here](https://labchild.github.io/labchild-react-portfolio/). Once there, you can click any of the navigation links to visit that page, or my name to return to the homepage.
 
 ## Questions & Contact
 Written and deployed by Lelah Bates Childs.

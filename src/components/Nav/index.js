@@ -6,6 +6,7 @@ import Footer from "../Footer";
 import "./index.css";
 
 const Nav = (props) => {
+
   const { handleSectionSelect, navIsOpen, setNavIsOpen } = props;
 
   const handleMenuClose = () => {

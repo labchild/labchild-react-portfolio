@@ -1,6 +1,7 @@
 import React from "react";
 
 const ProjectList = () => {
+
   // pass image, project name, deployed url and gh repo url as props
   // .map the array of data
   return (
@@ -11,6 +12,7 @@ const ProjectList = () => {
       </div>
     </section>
   );
+
 };
 
 export default ProjectList;
