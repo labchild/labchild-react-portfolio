@@ -17,8 +17,18 @@
   background-color: var(--black);
 }
 
-p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--white);
+  margin: 0;
+}
+
+p {
+  color: var(--lt-grey);
 }
 
 .home-btn {
@@ -123,4 +133,11 @@ li {
 
 .text-center {
   text-align: center;
+}
+
+.details {
+  margin: auto;
+  width: 90%;
+  line-height: 1.3;
+  padding: 0 0 1rem;
 }

@@ -1,0 +1,13 @@
+.link {
+  color: var(--lt-grey);
+  text-decoration: none;
+}
+
+.link:hover,
+.text-link:hover {
+    color: var(--accent-color);
+}
+
+.text-link {
+    color: var(--lt-grey);
+}
