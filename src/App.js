@@ -69,7 +69,7 @@ function App() {
               }
             />
             <Route
-              path="/about"
+              path="/labchild-react-portfolio/about"
               element={
                 <About
                   currentSection={currentSection}
@@ -79,7 +79,7 @@ function App() {
             />
             <Route
               exact
-              path="/portfolio"
+              path="/labchild-react-portfolio/portfolio"
               element={
                 <ProjectList
                   currentSection={currentSection}
@@ -89,7 +89,7 @@ function App() {
             />
             <Route
               exact
-              path="/resume"
+              path="/labchild-react-portfolio/resume"
               element={
                 <Resume
                   currentSection={currentSection}
@@ -99,7 +99,7 @@ function App() {
             />
             <Route
               exact
-              path="/contact"
+              path="/labchild-react-portfolio/contact"
               element={
                 <ContactForm
                   currentSection={currentSection}

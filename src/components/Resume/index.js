@@ -5,6 +5,7 @@ import pdf from "../../assets/documents/resume-lgt.pdf";
 import "./index.css";
 
 const Resume = () => {
+
   return (
     <section className="content">
       <h1 className="title">Resume</h1>
@@ -22,11 +23,11 @@ const Resume = () => {
       <h3 className="subtitle details">Experience</h3>
       <div className="text-left details">
         <p>
-          I have worked in a variety of envirnments over 10+ years across industries. From internships and entry level positions in corporate fashion and beauty to managerial positions in hospitality,
+          I've worked in a variety of environments over the past decade and across industries. From internships and entry level positions in corporate fashion and beauty to managerial positions in hospitality,
           I have developed a strong sense of motivation, teamwork, and ownership for my work. I have experience using Adobe Creative Suite, Microsoft Office, Google Workspace, and a number of POS products (including Toast and Aloha).
         </p>
         <p>
-          Throughout the last ten years, I have had to opportunity to provide my skills to small businesses and individuals outside of a enterprise setting.
+          Throughout the last ten years, I've also had to opportunity to provide my skills to small businesses and individuals outside of an enterprise setting.
           My freelance and consulting work has always centered around design, primarly graphic design and layout.
         </p>
         <p>
