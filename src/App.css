@@ -98,19 +98,21 @@ li {
 /* text/font styles */
 .title {
   font-family: Azedo, "Andale Mono";
-  font-size: 10rem;
+  font-size: 6rem;
   /* text-transform: uppercase; */
   color: var(--accent-color);
   opacity: .5;
   margin: 0 auto;
   text-align: right;
+  margin: auto;
+  width: 90%;
 }
 
 .subtitle {
-  text-align: center;
+  text-align: left;
   font-family: "Andale Mono", var(--main-font);
   font-weight: 500;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0 auto 1rem;
   color: var(--white);
 }

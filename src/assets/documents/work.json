@@ -4,7 +4,8 @@
         "name":"Employee Tracker",
         "hosted":"false",
         "url":"",
-        "img_path":"",
+        "img_path":"employee-tracker-preview.png",
+        "img_alt":"",
         "github":"https://github.com/labchild/employee-tracker",
         "description":"A command-line CMS to manage a company's employee database, using Node.js, Inquirer, and MySQL."
     },
@@ -14,6 +15,7 @@
         "hosted":"",
         "url":"",
         "img_path":"",
+        "img_alt":"",
         "github":"",
         "description":""
     }
