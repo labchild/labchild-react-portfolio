@@ -2,7 +2,7 @@
     {
         "id":0,
         "name":"Employee Tracker",
-        "hosted":"false",
+        "hosted":false,
         "url":"",
         "img_path":"employee-tracker-preview.png",
         "img_alt":"",
@@ -11,12 +11,12 @@
     },
     {
         "id":1,
-        "name":"",
-        "hosted":"",
-        "url":"",
-        "img_path":"",
-        "img_alt":"",
-        "github":"",
-        "description":""
+        "name":"tech thoughts",
+        "hosted":true,
+        "url":"https://thawing-springs-08911.herokuapp.com/",
+        "img_path":"https://raw.githubusercontent.com/labchild/tech-thoughts/main/public/images/homepage-preview.png",
+        "img_alt":"a preview of my playground CMS blog tech thoughts with dummy posts on the front page",
+        "github":"https://github.com/labchild/tech-thoughts",
+        "description":"A sandbox: A CMS, community-driven blog for developers, engineers, and programmers to connect, learn, and share knowledge"
     }
 ]

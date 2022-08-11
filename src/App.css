@@ -121,10 +121,10 @@ li {
   display: none;
 }
 
-.content {
+/* .content {
   overflow-y: scroll;
   height: 80vh;
-}
+} */
 
 .text-right {
   text-align: right;
@@ -150,7 +150,13 @@ li {
   text-decoration: none;
 }
 
-.link:hover {
+.title-link {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.link:hover,
+.title-link:hover {
     color: var(--accent-color);
 }
 

@@ -7,8 +7,8 @@ const ContactForm = () => {
       <h1 className="title">Contact</h1>
       <div className="details">
       <p>
-        You can reach me by phone, shoot me an email, or find me on these
-        social networking sites.
+        You can reach me by phone, shoot me an email, or find me on 
+        social media.
       </p>
       </div>
       <div className="details text-left">
