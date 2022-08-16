@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.08bba050.css",
-    "main.js": "/static/js/main.38f40ca4.js",
+    "main.css": "/static/css/main.6618456b.css",
+    "main.js": "/static/js/main.26363cb0.js",
     "static/js/787.7b311c03.chunk.js": "/static/js/787.7b311c03.chunk.js",
-    "static/media/avatar.JPG": "/static/media/avatar.ccde54b74608bc44f21d.JPG",
-    "static/media/resume-lgt.pdf": "/static/media/resume-lgt.6848d20ad404ef221cc5.pdf",
+    "static/media/resume-lgt.pdf": "/static/media/resume-lgt.dd1b7151ea1d82571103.pdf",
     "static/media/Ultra.otf": "/static/media/Ultra.ca13df22841e792e77c4.otf",
     "static/media/Azedo-Light.otf": "/static/media/Azedo-Light.1be3aa5289799b84f5d1.otf",
     "static/media/Azedo-Bold.otf": "/static/media/Azedo-Bold.f57b4f72108a34a8cd39.otf",
     "index.html": "/index.html",
-    "main.08bba050.css.map": "/static/css/main.08bba050.css.map",
-    "main.38f40ca4.js.map": "/static/js/main.38f40ca4.js.map",
+    "main.6618456b.css.map": "/static/css/main.6618456b.css.map",
+    "main.26363cb0.js.map": "/static/js/main.26363cb0.js.map",
     "787.7b311c03.chunk.js.map": "/static/js/787.7b311c03.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.08bba050.css",
-    "static/js/main.38f40ca4.js"
+    "static/css/main.6618456b.css",
+    "static/js/main.26363cb0.js"
   ]
 }
