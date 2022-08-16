@@ -1,6 +1,5 @@
 import React from "react";
 import "./index.css";
-import avatar from "../../assets/images/avatar.JPG";
 
 const About = () => {
   return (
@@ -8,7 +7,7 @@ const About = () => {
       <h1 className="title">about me</h1>
       <div className="d-flex flex-row justify-content-between flex-wrap row">
         <div className='avatar hide'>
-          <img src={avatar} alt="avatar" className="rounded-circle" />
+          <img src="" alt="avatar" className="rounded-circle" />
         </div>
         <div className="intro">
           <h4 className="subtitle text-left details">Hello World! 🌍</h4>

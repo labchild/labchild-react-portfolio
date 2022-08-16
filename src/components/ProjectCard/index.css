@@ -1,0 +1,27 @@
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 200px;
+    padding: 5px;
+    margin: 20px auto 0;
+    width: 100%;
+}
+.card-img,
+.card-head,
+.card-body {
+    color: var(--white);
+}
+
+.card-img {
+    min-width: 25%;
+    flex-grow: 1;
+}
+
+.card-text {
+    flex-grow: 2;
+}
+
+.card-head,
+.card-body {
+    text-align: left;
+}

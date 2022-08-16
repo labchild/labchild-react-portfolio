@@ -121,7 +121,7 @@ const Nav = (props) => {
           </li>
           <li>
             <NavLink
-              to="contact"
+              to="/contact"
               onClick={() => {
                 handleSectionSelect("Contact");
               }}

@@ -65,7 +65,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: aliceblue;
+  background-color: #141414;
 }
 
 code {
@@ -98,19 +98,21 @@ li {
 /* text/font styles */
 .title {
   font-family: Azedo, "Andale Mono";
-  font-size: 10rem;
+  font-size: 6rem;
   /* text-transform: uppercase; */
   color: var(--accent-color);
   opacity: .5;
   margin: 0 auto;
   text-align: right;
+  margin: auto;
+  width: 90%;
 }
 
 .subtitle {
-  text-align: center;
+  text-align: left;
   font-family: "Andale Mono", var(--main-font);
   font-weight: 500;
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 0 auto 1rem;
   color: var(--white);
 }
@@ -119,10 +121,10 @@ li {
   display: none;
 }
 
-.content {
+/* .content {
   overflow-y: scroll;
   height: 80vh;
-}
+} */
 
 .text-right {
   text-align: right;
@@ -148,10 +150,21 @@ li {
   text-decoration: none;
 }
 
-.link:hover {
+.title-link {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.link:hover,
+.title-link:hover {
     color: var(--accent-color);
 }
 
 .link-list li {
   padding: 0 0 10px;
+}
+
+@media screen and (orientation: portrait) {
+ .title {font-size: 5rem; font-weight: 500; text-align: center;}
+ .subtitle {font-size: 2rem; font-weight: 400;} 
 }
