@@ -22,7 +22,7 @@ const Home = () => {
         <div className="title marquee-item">labchild</div>
       </Marquee>
       <div className="intro">
-        <h2 class="subtitle">Lelah Bates Childs</h2>
+        <h2 class="subtitle text-center">Lelah Bates Childs</h2>
         <p>welcome to my website, where you can learn more about me</p>
       </div>
       <div className="skills">

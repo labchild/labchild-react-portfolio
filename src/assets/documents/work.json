@@ -1,0 +1,68 @@
+[
+    {
+        "id":0,
+        "name":"Friday: homemade tapas delivery",
+        "hosted":true,
+        "url":"https://fridayyy.co/",
+        "img_path":"https://github.com/labchild/hosted-assets/raw/main/images/friday-preview.png",
+        "img_alt":"",
+        "has_repo":false,
+        "github":"",
+        "description":"I designed a custom Shopify theme for a small business that creates, sells, and delivers boxes of tapas every Friday to homes around NYC."
+    },
+    {
+        "id":1,
+        "name":"Let's Eat!",
+        "hosted":true,
+        "url":"https://a-breezy.github.io/LetsEat/",
+        "img_path":"https://github.com/labchild/hosted-assets/raw/main/images/lets-eat-preview.png",
+        "img_alt":"a preview of the Let's Eat homepage showing a map and restaurant information from the Yelp API",
+        "has_repo":true,
+        "github":"https://github.com/a-breezy/LetsEat",
+        "description":"A restaurant randomizer to help users choose a restaurant to go to based on their location and the Yelp API. I designed the site, implemented Bulma as the CSS framework, and wrote frontend logic for conditional styling for this group project."
+    },
+    {
+        "id":2,
+        "name":"Kitchen Sink",
+        "hosted":true,
+        "url":"https://kitchen-sink.herokuapp.com/",
+        "img_path":"https://github.com/labchild/hosted-assets/raw/main/images/kitchen-sink-preview.png",
+        "img_alt":"a preview of the Kitchen Sink homepage displaying recipes posted by users",
+        "has_repo":true,
+        "github":"https://github.com/antger78/kitchen_sink",
+        "description":"A social, community-driven web application for hosting and searching recipes from a user-seeded, NoSQL database. I helped create the database architecture and wrote the APIs for this group project."
+    },
+    {
+        "id":3,
+        "name":"Employee Tracker",
+        "hosted":false,
+        "url":"",
+        "img_path":"https://github.com/labchild/hosted-assets/raw/main/images/employee-tracker-preview.png",
+        "img_alt":"the Employee Tracker start menu on the command line",
+        "has_repo":true,
+        "github":"https://github.com/labchild/employee-tracker",
+        "description":"A command-line CMS to manage a company's employee database, using Node.js, Inquirer, and MySQL."
+    },
+    {
+        "id":4,
+        "name":"tech thoughts",
+        "hosted":true,
+        "url":"https://thawing-springs-08911.herokuapp.com/",
+        "img_path":"https://raw.githubusercontent.com/labchild/tech-thoughts/main/public/images/homepage-preview.png",
+        "img_alt":"a preview of my playground CMS blog tech thoughts with dummy posts on the front page",
+        "has_repo":true,
+        "github":"https://github.com/labchild/tech-thoughts",
+        "description":"A sandbox: A CMS, community-driven blog for developers, engineers, and programmers to connect, learn, and share knowledge."
+    },
+    {
+        "id":5,
+        "name":"labchild's simple portfolio",
+        "hosted":true,
+        "url":"https://labchild.github.io/portfolio/",
+        "img_path":"https://github.com/labchild/hosted-assets/raw/main/images/simple-preview.png",
+        "img_alt":"a preview of my HTML portfolio site built in October 2021",
+        "has_repo":true,
+        "github":"https://github.com/labchild/portfolio",
+        "description":"A simple HTML page to showcase my work. I made this at the beginning of my development journey to practice semantic HTML and basic CSS rules."
+    }
+]

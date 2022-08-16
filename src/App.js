@@ -56,11 +56,11 @@ function App() {
         ></Nav>
         <main id="main">
             <h3 className={currentSection === "Home" ? "hide" : "home-btn" }>
-              <a href="/labchild-react-portfolio">labchild</a>
+              <a href="/">labchild</a>
             </h3>
           <Routes>
             <Route
-              path="/labchild-react-portfolio"
+              path="/"
               element={
                 <Home
                   currentSection={currentSection}
@@ -69,7 +69,7 @@ function App() {
               }
             />
             <Route
-              path="/labchild-react-portfolio/about"
+              path="/about"
               element={
                 <About
                   currentSection={currentSection}
@@ -79,7 +79,7 @@ function App() {
             />
             <Route
               exact
-              path="/labchild-react-portfolio/portfolio"
+              path="/portfolio"
               element={
                 <ProjectList
                   currentSection={currentSection}
@@ -89,7 +89,7 @@ function App() {
             />
             <Route
               exact
-              path="/labchild-react-portfolio/resume"
+              path="/resume"
               element={
                 <Resume
                   currentSection={currentSection}
@@ -99,7 +99,7 @@ function App() {
             />
             <Route
               exact
-              path="/labchild-react-portfolio/contact"
+              path="/contact"
               element={
                 <ContactForm
                   currentSection={currentSection}

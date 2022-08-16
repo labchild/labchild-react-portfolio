@@ -39,7 +39,7 @@ const Nav = (props) => {
         <ul>
           <li>
             <NavLink
-              to="/labchild-react-portfolio/about"
+              to="/about"
               onClick={() => {
                 handleSectionSelect("About");
               }}
@@ -67,7 +67,7 @@ const Nav = (props) => {
           </li>
           <li>
             <NavLink
-              to="/labchild-react-portfolio/portfolio"
+              to="/portfolio"
               onClick={() => {
                 handleSectionSelect("Portfolio");
               }}
@@ -93,7 +93,7 @@ const Nav = (props) => {
           </li>
           <li>
             <NavLink
-              to="/labchild-react-portfolio/resume"
+              to="/resume"
               onClick={() => {
                 handleSectionSelect("Resume");
               }}
@@ -121,7 +121,7 @@ const Nav = (props) => {
           </li>
           <li>
             <NavLink
-              to="/labchild-react-portfolio/contact"
+              to="/contact"
               onClick={() => {
                 handleSectionSelect("Contact");
               }}
