@@ -41,7 +41,8 @@ const ProjectList = () => {
                 )}
                 <div className="card-body">
                   <p>{project.description}</p>
-                  <a
+                  {project.has_repo ? (
+                    <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -50,6 +51,10 @@ const ProjectList = () => {
                     <FontAwesomeIcon icon="fa-brands fa-github" />{" "}
                     {project.name} on Github
                   </a>
+                  ) : (
+                    ""
+                  )}
+                  
                 </div>
               </div>
             </article>
